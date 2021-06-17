@@ -1,0 +1,4 @@
+com\cucumber\junit\pages\BasePage.class
+com\cucumber\junit\driver\driver\DriverManager.class
+com\cucumber\junit\pages\DocsPage.class
+com\cucumber\junit\pages\HomePage.class
