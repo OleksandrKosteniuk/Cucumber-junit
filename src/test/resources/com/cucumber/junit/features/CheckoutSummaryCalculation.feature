@@ -7,7 +7,7 @@ Feature: As a user, I want to get the ability to add Product line-item to the Ba
     And The User click on the Basket button in the pop-up on the Product Detail page
     And The User clicks on the Checkout button on the Shopping Cart page
     And The User fills in Email address input field
-    And The User fills in Email address input field
+    And The User fills in Full name input field
     And The User clicks on Enter address manually button on the Checkout page
     And The User fills in Address line 1 input field on the Checkout page
     And The User fills in Town input field on the Checkout page
