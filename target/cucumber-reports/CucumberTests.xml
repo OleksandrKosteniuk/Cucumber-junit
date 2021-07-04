@@ -1,48 +1,70 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="12.414">
-    <testcase classname="As a user, I want to get the ability to add Product line-item to the Basket and get Order Summary calculation on the Checkout page" name="Checkout summary component automatically calculate Order total amount on the Checkout page" time="12.129">
-        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;(//*[@class='checkout-btn btn optimizely-control'])[1]&quot;}&#10;  (Session info: chrome=91.0.4472.114)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'EPUAKYIW065C', ip: '192.168.0.112', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\OLEKSA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63101}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 4d9e6c8c368ac0f7a170b9955a6bcc4e&#10;*** Element info: {Using=xpath, value=(//*[@class='checkout-btn btn optimizely-control'])[1]}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given The User opens Product product details page with ID=9780007419494.....passed
-And The User clicks on the Add to basket button on the Product details page.passed
-And The User click on the Basket button in the pop-up on the Product Detail page.passed
-And The User clicks on the Checkout button on the Shopping Cart page........failed
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="3.386">
+    <testcase classname="As a user, I want to get the ability to add Product line-item to the Basket and get Order Summary calculation on the Checkout page" name="Checkout summary component automatically calculate Order total amount on the Checkout page" time="3.114">
+        <failure message="Could not convert arguments for step [^(?:The |)(?:Guest |User |Registered User |RememberedMe User )open(?:s|) Product details page with ID=([\d]+)$] defined at 'com.cucumber.junit.steps.OrderSummaryCalculationSteps.openCucumberWebsite(int)'.&#10;The details are in the stacktrace below." type="io.cucumber.core.exception.CucumberException"><![CDATA[Given The User opens Product details page with ID=9780007419494.............failed
+And The User clicks on the Add to basket button on the Product details page.skipped
+And The User clicks on the Basket button in the pop-up on the Product Detail page.skipped
+And The User clicks on the Checkout button on the Shopping Cart page........skipped
 And The User fills in Email address input field.............................skipped
-And The User fills in Email address input field.............................skipped
+And The User fills in Full name input field.................................skipped
 And The User clicks on Enter address manually button on the Checkout page...skipped
 And The User fills in Address line 1 input field on the Checkout page.......skipped
 And The User fills in Town input field on the Checkout page.................skipped
 And The User fills in Postcode input field on the Checkout page.............skipped
 And The User clicks on the Continue to payment button on the Checkout page..skipped
-Then Checkout summary component is automatically calculated Order total amount on the Checkout page.skipped
+Then Checkout summary component calculates Order total amount on the Checkout page.skipped
 
 StackTrace:
-org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"(//*[@class='checkout-btn btn optimizely-control'])[1]"}
-  (Session info: chrome=91.0.4472.114)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'EPUAKYIW065C', ip: '192.168.0.112', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\Users\OLEKSA~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:63101}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 4d9e6c8c368ac0f7a170b9955a6bcc4e
-*** Element info: {Using=xpath, value=(//*[@class='checkout-btn btn optimizely-control'])[1]}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at com.cucumber.junit.pages.BasePage.findElement(BasePage.java:16)
-	at com.cucumber.junit.pages.ShoppingCartPage.clickOnTheCheckoutButton(ShoppingCartPage.java:17)
-	at com.cucumber.junit.steps.OrderSummaryCalculationSteps.clickOnTheCheckoutButtonOnTheShoppingCartPage(OrderSummaryCalculationSteps.java:37)
-	at ✽.The User clicks on the Checkout button on the Shopping Cart page(classpath:com/cucumber/junit/features/CheckoutSummaryCalculation.feature:8)
+io.cucumber.core.exception.CucumberException: Could not convert arguments for step [^(?:The |)(?:Guest |User |Registered User |RememberedMe User )open(?:s|) Product details page with ID=([\d]+)$] defined at 'com.cucumber.junit.steps.OrderSummaryCalculationSteps.openCucumberWebsite(int)'.
+The details are in the stacktrace below.
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.couldNotConvertArguments(PickleStepDefinitionMatch.java:119)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:56)
+	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)
+	at io.cucumber.core.runner.TestStep.run(TestStep.java:49)
+	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)
+	at io.cucumber.core.runner.TestCase.run(TestCase.java:51)
+	at io.cucumber.core.runner.Runner.runPickle(Runner.java:66)
+	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)
+	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)
+	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
+	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:221)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)
+Caused by: io.cucumber.cucumberexpressions.CucumberExpressionException: ParameterType {anonymous} failed to transform [9780007419494] to int
+	at io.cucumber.cucumberexpressions.ParameterType.transform(ParameterType.java:237)
+	at io.cucumber.cucumberexpressions.Argument.getValue(Argument.java:67)
+	at io.cucumber.core.stepexpression.ExpressionArgument.getValue(ExpressionArgument.java:15)
+	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:47)
+	... 30 more
+Caused by: java.lang.NumberFormatException: For input string: "9780007419494"
+	at java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:68)
+	at java.base/java.lang.Integer.parseInt(Integer.java:652)
+	at java.base/java.lang.Integer.valueOf(Integer.java:957)
+	at java.base/java.lang.Integer.decode(Integer.java:1442)
+	at io.cucumber.cucumberexpressions.BuiltInParameterTransformer.transform(BuiltInParameterTransformer.java:50)
+	at io.cucumber.cucumberexpressions.RegularExpression.lambda$match$0(RegularExpression.java:61)
+	at io.cucumber.cucumberexpressions.ParameterType$TransformerAdaptor.transform(ParameterType.java:269)
+	at io.cucumber.cucumberexpressions.ParameterType.transform(ParameterType.java:233)
+	... 33 more
 ]]></failure>
     </testcase>
 </testsuite>

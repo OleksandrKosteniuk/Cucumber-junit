@@ -18,14 +18,15 @@ formatter.before({
   "status": "passed"
 });
 formatter.step({
-  "name": "The User opens Product product details page with ID\u003d9780007419494",
+  "name": "The User opens Product details page with ID\u003d9780007419494",
   "keyword": "Given "
 });
 formatter.match({
-  "location": "com.cucumber.junit.steps.OrderSummaryCalculationSteps.openCucumberWebsite()"
+  "location": "com.cucumber.junit.steps.OrderSummaryCalculationSteps.openCucumberWebsite(int)"
 });
 formatter.result({
-  "status": "passed"
+  "error_message": "io.cucumber.core.exception.CucumberException: Could not convert arguments for step [^(?:The |)(?:Guest |User |Registered User |RememberedMe User )open(?:s|) Product details page with ID\u003d([\\d]+)$] defined at \u0027com.cucumber.junit.steps.OrderSummaryCalculationSteps.openCucumberWebsite(int)\u0027.\nThe details are in the stacktrace below.\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.couldNotConvertArguments(PickleStepDefinitionMatch.java:119)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:56)\r\n\tat io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)\r\n\tat io.cucumber.core.runner.TestStep.run(TestStep.java:49)\r\n\tat io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)\r\n\tat io.cucumber.core.runner.TestCase.run(TestCase.java:51)\r\n\tat io.cucumber.core.runner.Runner.runPickle(Runner.java:66)\r\n\tat io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)\r\n\tat io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)\r\n\tat io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)\r\n\tat org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)\r\n\tat org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)\r\n\tat org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)\r\n\tat org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)\r\n\tat org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)\r\n\tat io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)\r\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\r\n\tat org.junit.runners.ParentRunner.run(ParentRunner.java:413)\r\n\tat org.junit.runner.JUnitCore.run(JUnitCore.java:137)\r\n\tat com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69)\r\n\tat com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:33)\r\n\tat com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:221)\r\n\tat com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:54)\r\nCaused by: io.cucumber.cucumberexpressions.CucumberExpressionException: ParameterType {anonymous} failed to transform [9780007419494] to int\r\n\tat io.cucumber.cucumberexpressions.ParameterType.transform(ParameterType.java:237)\r\n\tat io.cucumber.cucumberexpressions.Argument.getValue(Argument.java:67)\r\n\tat io.cucumber.core.stepexpression.ExpressionArgument.getValue(ExpressionArgument.java:15)\r\n\tat io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:47)\r\n\t... 30 more\r\nCaused by: java.lang.NumberFormatException: For input string: \"9780007419494\"\r\n\tat java.base/java.lang.NumberFormatException.forInputString(NumberFormatException.java:68)\r\n\tat java.base/java.lang.Integer.parseInt(Integer.java:652)\r\n\tat java.base/java.lang.Integer.valueOf(Integer.java:957)\r\n\tat java.base/java.lang.Integer.decode(Integer.java:1442)\r\n\tat io.cucumber.cucumberexpressions.BuiltInParameterTransformer.transform(BuiltInParameterTransformer.java:50)\r\n\tat io.cucumber.cucumberexpressions.RegularExpression.lambda$match$0(RegularExpression.java:61)\r\n\tat io.cucumber.cucumberexpressions.ParameterType$TransformerAdaptor.transform(ParameterType.java:269)\r\n\tat io.cucumber.cucumberexpressions.ParameterType.transform(ParameterType.java:233)\r\n\t... 33 more\r\n",
+  "status": "failed"
 });
 formatter.step({
   "name": "The User clicks on the Add to basket button on the Product details page",
@@ -35,17 +36,17 @@ formatter.match({
   "location": "com.cucumber.junit.steps.OrderSummaryCalculationSteps.clickOnTheAddToBasketButtonOnPDP()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
-  "name": "The User click on the Basket button in the pop-up on the Product Detail page",
+  "name": "The User clicks on the Basket button in the pop-up on the Product Detail page",
   "keyword": "And "
 });
 formatter.match({
   "location": "com.cucumber.junit.steps.OrderSummaryCalculationSteps.clickOnTheBasketCheckoutButtonInThePopUpOnPDP()"
 });
 formatter.result({
-  "status": "passed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "The User clicks on the Checkout button on the Shopping Cart page",
@@ -55,8 +56,7 @@ formatter.match({
   "location": "com.cucumber.junit.steps.OrderSummaryCalculationSteps.clickOnTheCheckoutButtonOnTheShoppingCartPage()"
 });
 formatter.result({
-  "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"(//*[@class\u003d\u0027checkout-btn btn optimizely-control\u0027])[1]\"}\n  (Session info: chrome\u003d91.0.4472.114)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027EPUAKYIW065C\u0027, ip: \u0027192.168.0.112\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002715.0.1\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.114, chrome: {chromedriverVersion: 91.0.4472.19 (1bf021f248676..., userDataDir: C:\\Users\\OLEKSA~1\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:63101}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 4d9e6c8c368ac0f7a170b9955a6bcc4e\n*** Element info: {Using\u003dxpath, value\u003d(//*[@class\u003d\u0027checkout-btn btn optimizely-control\u0027])[1]}\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\r\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)\r\n\tat org.openqa.selenium.By$ByXPath.findElement(By.java:353)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\r\n\tat com.cucumber.junit.pages.BasePage.findElement(BasePage.java:16)\r\n\tat com.cucumber.junit.pages.ShoppingCartPage.clickOnTheCheckoutButton(ShoppingCartPage.java:17)\r\n\tat com.cucumber.junit.steps.OrderSummaryCalculationSteps.clickOnTheCheckoutButtonOnTheShoppingCartPage(OrderSummaryCalculationSteps.java:37)\r\n\tat ✽.The User clicks on the Checkout button on the Shopping Cart page(classpath:com/cucumber/junit/features/CheckoutSummaryCalculation.feature:8)\r\n",
-  "status": "failed"
+  "status": "skipped"
 });
 formatter.step({
   "name": "The User fills in Email address input field",
@@ -69,11 +69,11 @@ formatter.result({
   "status": "skipped"
 });
 formatter.step({
-  "name": "The User fills in Email address input field",
+  "name": "The User fills in Full name input field",
   "keyword": "And "
 });
 formatter.match({
-  "location": "com.cucumber.junit.steps.OrderSummaryCalculationSteps.fillInEmailAddressInputField()"
+  "location": "com.cucumber.junit.steps.OrderSummaryCalculationSteps.fillInFullNameInputField()"
 });
 formatter.result({
   "status": "skipped"
@@ -129,7 +129,7 @@ formatter.result({
   "status": "skipped"
 });
 formatter.step({
-  "name": "Checkout summary component is automatically calculated Order total amount on the Checkout page",
+  "name": "Checkout summary component calculates Order total amount on the Checkout page",
   "keyword": "Then "
 });
 formatter.match({
@@ -138,7 +138,7 @@ formatter.match({
 formatter.result({
   "status": "skipped"
 });
-formatter.write("https://www.bookdepository.com/Hidden-Child-Camilla-L%C3%A4ckberg/9780007419494");
+formatter.write("data:,");
 formatter.embedding("image/png", "embedded0.png", "Checkout summary component automatically calculate Order total amount on the Checkout page");
 formatter.after({
   "status": "passed"
